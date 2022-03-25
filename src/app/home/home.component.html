@@ -1,0 +1,178 @@
+<!--Tagok - Rólunk Desktop nézet-->
+<div class="p-lg-5 p-2 d-none d-lg-block">
+  <div class="font-istok-web-24 d-md-none p-2 mt-2 justify-content-center">Tagok</div>
+  <div class="d-sm-flex gap-4 justify-content-between align-items-center align-xxl-items-start mt-2">
+    <div class="d-sm-flex-column">
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/milan.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Milán</h3>
+          <h6 class="card-text text-center">Gitár / Vokál</h6>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/anna.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Anna</h3>
+          <h6 class="card-text text-center">Ének</h6>
+        </div>
+      </div>
+    </div>
+    
+    <div class="d-sm-flex-column">
+      <div class="card text-white bg-dark d-none d-md-flex p-lg-5 p-3" style="width:50vw">
+        <div class="card-body">
+          <h3 class="card-title">Rólunk</h3>
+          <p class="card-text">
+            A kezdetektől céljuk volt az ugyanebből a korból származó magyar szerzemények repertoárra tűzése. Ez a törekvésük hozta meg igazán az áttörést számukra Magyarországon. Ebben a témában egyedüliként négy koncertnyi anyagot dolgoztak fel, <br />s nevük egybeforrt a Kabos, Jávor, Karády, Tolnay, Latabár filmek zenéivel. Egyedi hangszereléseik s játékmodoruk, amivel a filmzenéket a jazz-re jellemző rögtönzéssel is vegyítették, utánozhatatlan hangzást kölcsönöznek műsoraiknak. A zenekar alapítója, trombitás, bendzsós, énekese Bényei Tamás a kort idéző énekmodorával nemcsak a közönség soraiban népszerű, 2002-ben ezért részesítették eMeRTon díjban. Azóta számos tradicionális jazz együttes követte példájukat, s a kortárs könnyűzene jeles sztárjai is már a Hot Jazz Band által újraélesztett dalokat énekelik, ám velük ellentétben az együttes sajátja azonban még mindig az, hogy igazi időutazásra viszik hallgatóságukat a teljesen korhű hangzás és megjelenés által. Műsoraikat színesíti bendzsózenekaruk és mosódeszka show is. Koncertjeiket a derűs hangulat, a vicces konferanszok és a közönséggel közös éneklések jellemzik.
+
+            A Hot Jazz Band négy nemzetközi díjat nyert külföldön, köztük Európa, egyben a világ legnagyobb létszámú tradicionális versenyén lettek elsők a franciaországi Saint Raphaelben, 1995-ben. Az, hogy négy év alatt zsinórban négy nemzetközi versenyen diadalmaskodtak, ezzel világviszonylatban is egyedül<br /> állóak lettek, s hasonló teljesítménnyel egyetlen hazai nagy elődjük vagy kortársuk sem dicsekedhet.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-sm-flex-column">
+
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/attila.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Attila</h3>
+          <h6 class="card-text text-center">Ütős Hangszerek</h6>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/david.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Dávid</h3>
+          <h6 class="card-text text-center">Gitár</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Hírek Koncerte-->
+<div class="p-lg-5 p-2">
+  <div class="d-md-flex gap-4 justify-content-between">
+
+    <div class="card text-white bg-dark p-lg-4 p-sm-2 col-md-6 mb-3">
+      <div class="card-body">
+        <h3 class="card-title text-center">Hírek</h3>
+        <h6 class="card-text text-center">"Carlos olyan felejhetetlen ember volt, aki nem csak gyönyörű, istenadta énekhanggal bírt, hanem abszolút tehetség is volt. Szenvedélye, játékossága és humorérzéke kivételes személyiséggé tette, nevetése mindig jókedvre derített másokat. Rajongók milliói szerették szerte a világon, mi pedig szerencsések vagyunk és megtiszteltetésnek érezzük, hogy annyi éven át felléphettünk vele. Hiányozni fog a könnyedsége, a barátsága és a briliáns hangja. Az ő tiszteletére hoztuk létre a Carlos Marin Alapítványt, és jövőbeni koncertjeinken is az ő éneke előtt tisztelgünk majd. Emlékezzünk mind a gyönyörű lelkére és magávalragadó tehetségére. Nyugodjék békében örökké" - áll Miller, Izambard és Bühler közleményében.</h6>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/mIgJ_8vIlcY" title="YouTube video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex-column mb-4 col-md-5 align-items-center">
+      <div class="font-istok-web-24">Közelgő Koncertek</div>
+      <br />
+      <div class="d-flex mb-2 mb-lg-4" *ngFor="let concert of concerts">
+        <div class="d-flex flex-column align-items-center justify-content-center concert-section-white font-istok-web-36 p-lg-4 p-2">{{concert.date}}</div>
+        <div class="d-flex flex-column align-items-center justify-content-center text-center concert-section-grey font-istok-web-24  p-lg-4 p-2">{{concert.place}}</div>
+        <div class="d-flex flex-column align-items-center justify-content-center concert-section-black font-istok-web-24 p-lg-4 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Tagok - Rólunk Mobilnézet-->
+
+<div class="p-lg-5 p-2 d-sm-block d-lg-none">
+  <div class="font-istok-web-24 d-md-none p-2 mt-2 justify-content-center">Tagok</div>
+  <div class="d-sm-flex gap-4 justify-content-between align-items-center align-xxl-items-start mt-2">
+    <div class="d-sm-flex-column">
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/milan.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Milán</h3>
+          <h6 class="card-text text-center">Gitár / Vokál</h6>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/anna.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Anna</h3>
+          <h6 class="card-text text-center">Ének</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-sm-flex-column">
+      <div class="card text-white bg-dark d-none d-md-flex p-lg-5 p-3" style="width:50vw">
+        <div class="card-body">
+          <h3 class="card-title">Rólunk</h3>
+          <p class="card-text">
+            A kezdetektől céljuk volt az ugyanebből a korból származó magyar szerzemények repertoárra tűzése. Ez a törekvésük hozta meg igazán az áttörést számukra Magyarországon. Ebben a témában egyedüliként négy koncertnyi anyagot dolgoztak fel, <br />s nevük egybeforrt a Kabos, Jávor, Karády, Tolnay, Latabár filmek zenéivel. Egyedi hangszereléseik s játékmodoruk, amivel a filmzenéket a jazz-re jellemző rögtönzéssel is vegyítették, utánozhatatlan hangzást kölcsönöznek műsoraiknak. A zenekar alapítója, trombitás, bendzsós, énekese Bényei Tamás a kort idéző énekmodorával nemcsak a közönség soraiban népszerű, 2002-ben ezért részesítették eMeRTon díjban. Azóta számos tradicionális jazz együttes követte példájukat, s a kortárs könnyűzene jeles sztárjai is már a Hot Jazz Band által újraélesztett dalokat énekelik, ám velük ellentétben az együttes sajátja azonban még mindig az, hogy igazi időutazásra viszik hallgatóságukat a teljesen korhű hangzás és megjelenés által. Műsoraikat színesíti bendzsózenekaruk és mosódeszka show is. Koncertjeiket a derűs hangulat, a vicces konferanszok és a közönséggel közös éneklések jellemzik.
+
+            A Hot Jazz Band négy nemzetközi díjat nyert külföldön, köztük Európa, egyben a világ legnagyobb létszámú tradicionális versenyén lettek elsők a franciaországi Saint Raphaelben, 1995-ben. Az, hogy négy év alatt zsinórban négy nemzetközi versenyen diadalmaskodtak, ezzel világviszonylatban is egyedül<br /> állóak lettek, s hasonló teljesítménnyel egyetlen hazai nagy elődjük vagy kortársuk sem dicsekedhet.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-sm-flex-column">
+
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/attila.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Attila</h3>
+          <h6 class="card-text text-center">Ütős Hangszerek</h6>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top" src="assets/david.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title text-center">Dávid</h3>
+          <h6 class="card-text text-center">Gitár</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Képnézegető-->
+
+
+
+  <div id="lilinCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#lilinCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#lilinCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Zenekari közös kép</h5>
+          <p>A Festői pálosvörösmarti fotózás első képe</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Zenekari közös kép</h5>
+          <p>A Festői pálosvörösmarti fotózás második képe</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#lilinCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#lilinCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+

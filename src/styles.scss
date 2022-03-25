@@ -1,0 +1,116 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import '~viewerjs/dist/viewer.css';
+
+body {
+  background: radial-gradient(151.65% 151.65% at 44.65% 112.24%, #842D49 0%, #000000 100%);
+}
+
+html {
+  font-size: 100%;
+}
+
+
+/*FONTS*/
+
+.font-lobster-24 {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.font-istok-web-36 {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.005em;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.font-istok-web-24 {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.font-istok-web-16 {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.concert-section-white {
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width:10rem;
+}
+
+.concert-section-grey {
+  background-color: #263238;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 20rem;
+}
+
+.concert-section-black {
+  background-color: black;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+iframe{
+    border-radius:0.25rem;
+}
+
+.card {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.emailcontainer {
+  background-color: #26292B;
+}
+
+
+.personalinputfield {
+  background-color: #303335;
+  border: solid 1px rgb(85, 85, 85);
+  height: 3rem;
+  color: white;
+  width:100%;
+}
+
+.messageinputfield {
+  background-color: #303335;
+  border: solid 1px rgb(85, 85, 85);
+  height: 25rem;
+  color: white;
+  width: 100%;
+  resize:none;
+}
+
+#wrap {
+  padding: 10px;
+  min-height: -webkit-calc(100% - 100px); /* Chrome */
+  min-height: -moz-calc(100% - 100px); /* Firefox */
+  min-height: calc(100% - 100px); /* native */
+}
+
+.footer {
+  position: relative;
+  clear: both;
+}

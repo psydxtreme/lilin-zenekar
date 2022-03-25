@@ -1,0 +1,27 @@
+<div class="container">
+
+      <div class="d-flex-column gap-2 p-md-5 p-1">
+
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <div class="d-flex-cloumn emailcontainer p-3">
+            <div class="font-istok-web-36 text-white mb-4">Lépj Velünk Kapcsolatba</div>
+            <div class="d-md-flex d-flex-column gap-4 p-1">
+
+              <input class="personalinputfield p-1" placeholder="Név" name="name" ngModel required #name="ngModel">
+              <input class="personalinputfield p-1" placeholder="E-mail Cím" email name="email" ngModel required #email="ngModel">
+
+            </div>
+            <div class="d-flex p-1 form-group">
+              <textarea class="messageinputfield p-1" placeholder="Üzenet" name="message" ngModel required #message="ngModel"></textarea>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+              <button type="button" class="btn btn-light">
+                Üzenet Küldése
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+  </div>
