@@ -13,8 +13,32 @@ import { HttpClientModule } from '@angular/common/http';
 import { GaleryComponent } from './galery/galery.component';
 import { NgxViewerModule } from 'ngx-viewer';
 import { BiographyComponent } from './biography/biography.component';
+import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
 
 
+const cookieConfig: NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'http://www.gyuruvarazs.webtelek.hu'
+  },
+  palette: {
+    popup: {
+      background: '#000'
+    },
+    button: {
+      background: 'white',
+      text:"black"
+    }
+  },
+  theme: 'edgeless',
+  type: 'info',
+
+  content: {
+    message: 'Tájékoztatjuk, hogy a lilinzenekar.hu weboldal sütiket használ a weboldal működése céljából.',
+    dismiss: "Elfogadom",
+    allow: "Sütik engedélyezése",
+    deny: "Sütik elutasítása",
+  }
+};
 
 
 @NgModule({
@@ -35,7 +59,9 @@ import { BiographyComponent } from './biography/biography.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxViewerModule
+    NgxViewerModule,
+    NgcCookieConsentModule.forRoot(cookieConfig)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
