@@ -3,12 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\contact",
-    "\\src\\app\\home",
     "\\src\\app\\navbar",
-    "\\src\\assets",
-    "\\src\\assets\\datasource"
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }

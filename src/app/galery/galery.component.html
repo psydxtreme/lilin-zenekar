@@ -1,26 +1,61 @@
- <div ngxViewer class="p-lg-5 p-2">
-   <div class="font-istok-web-24">Képek</div>
-   <div class="d-flexcolumn d-md-flex my-3 gap-4">
-     <div class="card my-3">
-       <img src="https://picsum.photos/2000/1500/?random=1" alt="Image 1">
-     </div>
-     <div class="card my-3">
-       <img src="https://picsum.photos/2000/1500/?random=2" alt="Image 2">
-     </div>
-     <div class="card my-3">
-       <img src="https://picsum.photos/2000/1500/?random=3" alt="Image 3">
-     </div>
-   </div>
-   <div class="d-flexcolumn d-md-flex gap-4 my-3">
-     <div class="card my-3">
-       <img src="https://picsum.photos/2000/1500/?random=5" alt="Image 5">
-     </div>
-     <div class="card my-3">
-       <img src="https://picsum.photos/2000/1500/?random=6" alt="Image 6">
-     </div>
-     <div class="card my-3">
-       <img src="https://picsum.photos/2000/1500/?random=4" alt="Image 4">
-     </div>
-   </div>
+<ul class="nav nav-pills p-2" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pictures-tab" data-bs-toggle="pill" data-bs-target="#pictures" type="button" role="tab" aria-controls="pictures" aria-selected="true">Képek</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="videos-tab" data-bs-toggle="pill" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videók</button>
+  </li>
+</ul>
+
+<!--Tab content-->
+<div class="tab-content" id="switcher-tabContent">
+
+  <!--KépNézegető-->
+  <div id="pictures" ngxViewer class="p-lg-5 p-2 tab-pane fade show active" role="tabpanel" aria-labelledby="pictures-tab">
+    <div class="d-flexcolumn d-md-flex my-3 gap-4">
+      <div class="card my-3">
+        <img src="https://picsum.photos/2000/1500/?random=1" alt="Image 1">
+      </div>
+      <div class="card my-3">
+        <img src="https://picsum.photos/2000/1500/?random=2" alt="Image 2">
+      </div>
+      <div class="card my-3">
+        <img src="https://picsum.photos/2000/1500/?random=3" alt="Image 3">
+      </div>
     </div>
+    <div class="d-flexcolumn d-md-flex gap-4 my-3">
+      <div class="card my-3">
+        <img src="https://picsum.photos/2000/1500/?random=5" alt="Image 5">
+      </div>
+      <div class="card my-3">
+        <img src="https://picsum.photos/2000/1500/?random=6" alt="Image 6">
+      </div>
+      <div class="card my-3">
+        <img src="https://picsum.photos/2000/1500/?random=4" alt="Image 4">
+      </div>
+    </div>
+  </div>
+
+  <!--Beágyazott Videók-->
+  <div id="videos" class="p-lg-5 tab-pane fade p-2" role="tabpanel" aria-labelledby="videos-tab">
+    <div class="d-flex flex-md-row flex-column gap-4">
+      <div class="card ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/mIgJ_8vIlcY" title="YouTube video" allowfullscreen></iframe>
+      </div>
+      <div class="card ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/4gd_x9DTBS0" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
 

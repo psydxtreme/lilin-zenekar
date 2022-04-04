@@ -18,7 +18,7 @@ import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsen
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'http://www.gyuruvarazs.webtelek.hu'
+    domain: 'gyuruvarazs.webtelek.hu'
   },
   palette: {
     popup: {
