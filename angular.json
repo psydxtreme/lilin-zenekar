@@ -26,7 +26,6 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -113,6 +112,16 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "lilin:build:production",
+            "firebaseProject": "lilin-e2e74",
+            "firebaseHostingSite": "lilin-e2e74"
           }
         }
       }

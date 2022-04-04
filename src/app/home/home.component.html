@@ -68,11 +68,29 @@
     </div>
 
     <div class="d-flex-column mb-4 col-md-5 align-items-center">
+      <div class="d-flex flex-row">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Új Koncert hozzáadása
+        </button>
+
+        <div class="modal fade  font-istok-web-24" id="exampleModal" tabindex="-3" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog"></div>
+          <div class="modal-header font-istok-web-24">
+            <h5 class="modal-title font-istok-web-24" id="exampleModalLabel">Új Koncertdátum Felvitele</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body font-istok-web-24">
+            <app-create-concerts></app-create-concerts>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
       <div class="font-istok-web-24">Közelgő Koncertek</div>
       <br />
-      <div class="d-flex mb-2 mb-lg-4" *ngFor="let concert of concerts">
+      <div class="d-flex mb-2 mb-lg-4" *ngFor="let concert of concert | async">
         <div class="d-flex flex-column align-items-center justify-content-center concert-section-white font-istok-web-36 p-lg-4 p-2">{{concert.date}}</div>
-        <div class="d-flex flex-column align-items-center justify-content-center text-center concert-section-grey font-istok-web-24  p-lg-4 p-2">{{concert.place}}</div>
+        <div class="d-flex flex-column align-items-center justify-content-center text-center concert-section-grey font-istok-web-24  p-lg-4 p-2">{{concert.location}}</div>
         <div class="d-flex flex-column align-items-center justify-content-center concert-section-black font-istok-web-24 p-lg-4 p-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -80,6 +98,7 @@
           </svg>
         </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -144,7 +163,7 @@
 
 
 
-  <div id="lilinCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="lilinCarousel" class="carousel-shadow carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#lilinCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#lilinCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>

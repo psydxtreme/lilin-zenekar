@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Concerts, InitService } from '../init.service';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +9,15 @@ import { Concerts, InitService } from '../init.service';
 })
 export class HomeComponent implements OnInit {
 
-  concerts : Concerts[];
+  concert: Observable<any[]>;
 
-  constructor(
-    private initService: InitService
-  ) { }
-
-  ngOnInit(): void {
-    this.concerts = this.initService.concerts;
+  constructor(private db: AngularFirestore
+  ) {
+    this.concert = this.db.collection('concerts').valueChanges();
   }
+
+  ngOnInit() {
+  }
+
 
 }

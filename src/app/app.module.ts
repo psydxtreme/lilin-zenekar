@@ -14,11 +14,24 @@ import { GaleryComponent } from './galery/galery.component';
 import { NgxViewerModule } from 'ngx-viewer';
 import { BiographyComponent } from './biography/biography.component';
 import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import {getDatabase, provideDatabase} from "@angular/fire/database"
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideFunctions,getFunctions } from '@angular/fire/functions';
+import { provideStorage, getStorage } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { CreateConcertsComponent } from './home/create-concerts/create-concerts.component';
 
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'http://www.gyuruvarazs.webtelek.hu'
+    domain: 'gyuruvarazs.webtelek.hu'
   },
   palette: {
     popup: {
@@ -50,17 +63,28 @@ const cookieConfig: NgcCookieConsentConfig = {
     CalendarComponent,
     ContactComponent,
     GaleryComponent,
-    BiographyComponent
+    BiographyComponent,
+    CreateConcertsComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireAuthModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     NgxViewerModule,
-    NgcCookieConsentModule.forRoot(cookieConfig)
+    NgcCookieConsentModule.forRoot(cookieConfig),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+    provideFunctions(() => getFunctions()),
+    provideStorage(() => getStorage())
 
   ],
   providers: [],

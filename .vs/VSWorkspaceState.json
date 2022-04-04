@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\contact",
     "\\src\\app\\home",
-    "\\src\\app\\navbar",
-    "\\src\\assets",
-    "\\src\\assets\\datasource"
+    "\\src\\app\\home\\create-concerts",
+    "\\src\\app\\services",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false
 }

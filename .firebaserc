@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lilin-e2e74": {
+      "hosting": {
+        "lilin": [
+          "lilin-e2e74"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lilin-e2e74"
+  }
+}
