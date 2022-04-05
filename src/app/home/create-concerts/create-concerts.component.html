@@ -1,4 +1,4 @@
-<div class="submit-form">
+<div class="d-flex flex-column submit-form card p-2">
   <div *ngIf="!submitted">
     <div class="form-group">
       <label for="title">Dátum</label>
@@ -25,10 +25,10 @@
              [(ngModel)]="concert.link"
              name="description" />
     </div>
-    <button (click)="createConcert()" class="btn btn-success">Submit</button>
+      <button (click)="createConcert()" class="btn btn-success my-3">Létrehozás</button>
   </div>
   <div *ngIf="submitted">
     <h4>You submitted successfully!</h4>
-    <button class="btn btn-success" (click)="newConcert()">Add</button>
+    <button class="btn btn-success" (click)="newConcert()">Új Hozzáadása</button>
   </div>
 </div>

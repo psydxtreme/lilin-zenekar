@@ -27,6 +27,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { CreateConcertsComponent } from './home/create-concerts/create-concerts.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AuthService } from "src/app/services/authentication.service";
 
 
 const cookieConfig: NgcCookieConsentConfig = {
@@ -64,7 +66,8 @@ const cookieConfig: NgcCookieConsentConfig = {
     ContactComponent,
     GaleryComponent,
     BiographyComponent,
-    CreateConcertsComponent
+    CreateConcertsComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +90,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     provideStorage(() => getStorage())
 
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
