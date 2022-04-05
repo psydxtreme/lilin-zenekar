@@ -3,10 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\home",
-    "\\src\\app\\services",
+    "\\src\\app\\admin-login",
+    "\\src\\app\\home\\create-concerts",
+    "\\src\\app\\navbar",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\services\\authentication.service.ts",
+  "SelectedNode": "\\src\\app\\navbar\\navbar.component.html",
   "PreviewInSolutionExplorer": false
 }

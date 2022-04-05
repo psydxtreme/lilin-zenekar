@@ -13,14 +13,14 @@
        
         <div class="authBlock my-1">
           <div class="formGroup my-1">
-            <input type="button" class="btn btn-primary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+            <input type="button" class="btn btn-primary" value="Bejelntkezés" (click)="authService.SignIn(userName.value, userPassword.value)">
           </div>
         </div>
         <!-- Calling SignOut Api from AuthenticationService -->
         <div class="formGroup">
           <input type="button"
                  class="btn btn-primary"
-                 value="Log Out"
+                 value="Kijelentkezés"
                  (click)="authService.SignOut()" />
         </div>
       </div>
