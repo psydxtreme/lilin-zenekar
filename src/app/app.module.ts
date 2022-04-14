@@ -29,6 +29,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { CreateConcertsComponent } from './home/create-concerts/create-concerts.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AuthService } from "src/app/services/authentication.service";
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 const cookieConfig: NgcCookieConsentConfig = {
@@ -82,6 +83,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     ReactiveFormsModule,
     HttpClientModule,
     NgxViewerModule,
+    NgxPaginationModule,
     NgcCookieConsentModule.forRoot(cookieConfig),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),

@@ -1,0 +1,21 @@
+Changes 
+
+Rólunk:
+Mindenkiről valami, Anna összerakja
+
+Carousel képek leírások:
+Anna
+
+Footer admin rejtés :
+Admin-login prefix /////////////KÉSZ
+
+Rólunk menü:
+Mindenki fogalmazzon meg magáról 10 mondatot
+-tabok linkjei ne kéke legyenek /////////// KÉSZ
+
+Galéria:
+Paginator
+
+
+
+

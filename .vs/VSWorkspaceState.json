@@ -3,11 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\admin-login",
-    "\\src\\app\\home\\create-concerts",
-    "\\src\\app\\navbar",
-    "\\src\\assets"
+    "\\src\\app\\galery"
   ],
-  "SelectedNode": "\\src\\app\\navbar\\navbar.component.html",
+  "SelectedNode": "\\src\\app\\galery\\galery.component.ts",
   "PreviewInSolutionExplorer": false
 }
